@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <title>제일고 2학년 시간표</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div id="container">
+        <table id="schedule">
+            <th class="day">교시</th>
+            <th class="day">월</th>
+            <th class="day">화</th>
+            <th class="day">수</th>
+            <th class="day">목</th>
+            <th class="day">금</th>
+
+            <!--1번째 줄-->
+            <tr>
+                <td class="time_container">
+                    <p>1교시</p>
+                </td>
+                <td name="Mon" , class="subject_container"><p class="subject_text">과목</p></td>
+                <td name="Tue" , class="subject_container D"><p class="subject_text">D</p></td>
+                <td name="Wed" , class="subject_container D"><p class="subject_text">D</p></td>
+                <td name="Thu" , class="subject_container A"><p class="subject_text">A</p></td>
+                <td name="Fri" , class="subject_container C"><p class="subject_text">C</p></td>
+            </tr>
+            <!--1번째 줄 끝-->
+
+            <!--2번째 줄-->
+            <tr>
+                <td class="time_container">
+                    <p>2교시</p>
+                </td>
+                <td name="Mon" , class="subject_container B"><p class="subject_text">B</p></td>
+                <td name="Tue" , class="subject_container"><p class="subject_text">과목</p></td>
+                <td name="Wed" , class="subject_container"><p class="subject_text">과목</p></td>
+                <td name="Thu" , class="subject_container"><p class="subject_text">과목</p></td>
+                <td name="Fri" , class="subject_container A"><p class="subject_text">A</p></td>
+            </tr>
+            <!--2번째 줄 끝-->
+
+            <!--3번째 줄-->
+            <tr>
+                <td class="time_container">
+                    <p>3교시</p>
+                </td>
+                <td name="Mon" , class="subject_container"><p class="subject_text">과목</p></td>
+                <td name="Tue" , class="subject_container"><p class="subject_text">과목</p></td>
+                <td name="Wed" , class="subject_container"><p class="subject_text">과목</p></td>
+                <td name="Thu" , class="subject_container"><p class="subject_text">과목</p></td>
+                <td name="Fri" , class="subject_container"><p class="subject_text">과목</p></td>
+            </tr>
+            <!--3번째 줄 끝-->
+
+            <!--4번째 줄-->
+            <tr>
+                <td class="time_container">
+                    <p>4교시</p>
+                </td>
+                <td name="Mon" , class="subject_container"><p class="subject_text">과목</p></td>
+                <td name="Tue" , class="subject_container C"><p class="subject_text">C</p></td>
+                <td name="Wed" , class="subject_container"><p class="subject_text">과목</p></td>
+                <td name="Thu" , class="subject_container B"><p class="subject_text">B</p></td>
+                <td name="Fri" , class="subject_container"><p class="subject_text">과목</p></td>
+            </tr>
+            <!--4번째 줄 끝-->
+
+            <!--5번째 줄-->
+            <tr>
+                <td class="time_container">
+                    <p>5교시</p>
+                </td>
+                <td name="Mon" , class="subject_container C"><p class="subject_text">C</p></td>
+                <td name="Tue" , class="subject_container"><p class="subject_text">과목</p></td>
+                <td name="Wed" , class="subject_container"><p class="subject_text">과목</p></td>
+                <td name="Thu" , class="subject_container"><p class="subject_text">과목</p></td>
+                <td name="Fri" , class="subject_container B"><p class="subject_text">B</p></td>
+            </tr>
+            <!--5번째 줄 끝-->
+
+            <!--6번째 줄-->
+            <tr>
+                <td class="time_container">
+                    <p>6교시</p>
+                </td>
+                <td name="Mon" , class="subject_container A"><p class="subject_text">A</p></td>
+                <td name="Tue" , class="subject_container B"><p class="subject_text">B</p></td>
+                <td name="Wed" , class="subject_container"><p class="subject_text">과목</p></td>
+                <td name="Thu" , class="subject_container C"><p class="subject_text">C</p></td>
+                <td name="Fri" , class="subject_container"><p class="subject_text">과목</p></td>
+            </tr>
+            <!--6번째 줄 끝-->
+
+            <!--7번째 줄-->
+            <tr>
+                <td class="time_container">
+                    <p>7교시</p>
+                </td>
+                <td name="Mon" , class="subject_container"><p class="subject_text">과목</p></td>
+                <td name="Tue" , class="subject_container A"><p class="subject_text">A</p></td>
+                <td name="Wed" , class="subject_container"><p class="subject_text">과목</p></td>
+                <td name="Thu" , class="subject_container D"><p class="subject_text">D</p></td>
+                <td name="Fri" , class="subject_container D"><p class="subject_text">D</p></td>
+            </tr>
+            <!--7번째 줄 끝-->
+        </table>
+    </div>
+    <div id="container">
+        <select name="class">
+            <option value="None">반 선택</option>
+            <option value="2-1">2학년 1반</option>
+            <option value="2-2">2학년 2반</option>
+            <option value="2-3">2학년 3반</option>
+            <option value="2-4">2학년 4반</option>
+            <option value="2-5">2학년 5반</option>
+            <option value="2-6">2학년 6반</option>
+            <option value="2-7">2학년 7반</option>
+        </select>
+        <select name="subject_A">
+            <option value="A">A 과목 선택</option>
+            <option value="고전읽기">고전읽기</option>
+            <option value="물리학">물리학</option>
+            <option value="생활과 과학">생활과 과학</option>
+            <option value="생활과 윤리">생활과 윤리</option>
+            <option value="일본어">일본어</option>
+            <option value="중국어">중국어</option>
+            <option value="프로그래밍">프로그래밍</option>
+            <option value="확률과 통계">확률과 통계</option>
+        </select>
+        <select name="subject_B">
+            <option value="B">B 과목 선택</option>
+            <option value="경제">경제</option>
+            <option value="물리학">물리학</option>
+            <option value="생명과학">생명과학</option>
+            <option value="생활과 윤리">생활과 윤리</option>
+            <option value="영어회화">영어회화</option>
+            <option value="인공지능기초">인공지능기초</option>
+            <option value="일본어">일본어</option>
+            <option value="확률과 통계">확률과 통계</option>
+        </select>
+        <select name="subject_C">
+            <option value="C">C 과목 선택</option>
+            <option value="생명과학">생명과학</option>
+            <option value="여행지리">여행지리</option>
+            <option value="일본어">일본어</option>
+            <option value="정치와 법">정치와 법</option>
+            <option value="중국어">중국어</option>
+            <option value="지구과학">지구과학</option>
+            <option value="확률과 통계">확률과 통계</option>
+        </select>
+        <select name="subject_D">
+            <option value="D">D 과목 선택</option>
+            <option value="생활과 과학">생활과 과학</option>
+            <option value="생활과 윤리">생활과 윤리</option>
+            <option value="세계사">세계사</option>
+            <option value="영어권문화">영어권문화</option>
+            <option value="인공지능기초">인공지능기초</option>
+            <option value="중국어">중국어</option>
+            <option value="지구과학">지구과학</option>
+            <option value="확률과 통계">확률과 통계</option>
+        </select>
+    </div>
+    <p id="contact">한번만 설정해두면 다음에 다시 접속해도 시간표가 그대로 유지됩니다</p>
+    <div id="desc_container">
+        <p class="description">!!****변경된 시간표는 적용되어 표시되지 않습니다****!!</p>
+        <p id="A" class="description">A : 과목을 선택해주세요</p>
+        <p id="B" class="description">B : 과목을 선택해주세요</p>
+        <p id="C" class="description">C : 과목을 선택해주세요</p>
+        <p id="D" class="description">D : 과목을 선택해주세요</p>
+    </div>
+    <div id="desc_container">
+        <p id="copyright">Made By 2220 장기원</p>
+        <p id="contact">버그 신고 및 시간표 수정 요청</p>
+        <p id="contact">Instagram : @giwon_w.dev7773</p>
+    </div>
+    <script type="text/javascript" src="/script/script.js"></script>
+</body>
+</html>
