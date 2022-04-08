@@ -76,6 +76,28 @@ function update_opt_subject(type, subject_name){
     desc.innerHTML = type + " : " + subject_name;
 }
 
+function save_theme(mode){
+    localStorage.setItem("theme", mode);
+    console.log(mode+"모드 저장");
+}
+
+function load_theme_from_localstorage(){
+    loaded_theme = localStorage.getItem("theme");
+    if (loaded_theme == "dark"){
+        document.styleSheets.item(0).disabled=false;  // 다크 css
+        document.styleSheets.item(1).disabled=true;  // 라이트 css
+        console.log("다크 모드 활성");
+    }else if (loaded_theme == "light"){
+        document.styleSheets.item(0).disabled=true;  // 다크 css
+        document.styleSheets.item(1).disabled=false;  // 라이트 css
+        console.log("라이트 모드 활성");
+    }else{
+        document.styleSheets.item(0).disabled=false;  // 다크 css
+        document.styleSheets.item(1).disabled=true;  // 라이트 css
+        console.log("기본 테마 (다크) 활성");
+    }
+}
+
 function update_common_subject_from_localstorage(){
     class_num = localStorage.getItem("class");
     if (class_num == "None"){ return; }
@@ -128,8 +150,13 @@ document.addEventListener('input', function(e){
         localStorage.setItem("D", e.target.value);
         update_opt_subject("D", e.target.value);
     }
+    else if (e.target.name == "theme"){ // D 과목을 변경하면
+        save_theme(e.target.value);
+        load_theme_from_localstorage();
+    }
 })
 
+load_theme_from_localstorage();
 update_common_subject_from_localstorage();
 update_a_subject_from_localstorage();
 update_b_subject_from_localstorage();
